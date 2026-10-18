@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<title>鳴潮｜漂泊者活動專區</title>
+<meta name="description" content="鳴潮主題粉絲設計頁面。">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050b14;
+  color: #edf7ff;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 540px;
+  overflow: hidden;
+  background-color: #07111f;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(5,13,25,.18) 0%,
+      rgba(5,13,25,.08) 35%,
+      rgba(5,11,20,.45) 65%,
+      #050b14 100%
+    ),
+    url('./hero-bg.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+.glow {
+  text-shadow: 0 0 22px rgba(113,198,255,.65);
+}
+
+.panel {
+  background: linear-gradient(
+    145deg,
+    rgba(20,43,65,.90),
+    rgba(5,17,31,.97)
+  );
+  border: 1px solid rgba(157,210,255,.38);
+  box-shadow: 0 12px 35px rgba(0,0,0,.28);
+  backdrop-filter: blur(10px);
+}
+
+.cta {
+  background: linear-gradient(
+    110deg,
+    #d9f3ff,
+    #83caff,
+    #d9f3ff
+  );
+  color: #071727;
+  box-shadow: 0 0 28px rgba(95,183,255,.28);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 38px rgba(95,183,255,.5);
+}
+
+.feature-icon {
+  color: #a9e0ff;
+  text-shadow: 0 0 16px rgba(105,192,255,.45);
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    min-height: 540px;
+    background-position: center 30%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .cta {
+    transition: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero-visual">
+
+  <header class="relative max-w-xl mx-auto px-6 pt-7 flex items-center justify-between">
+    <div>
+      <div class="text-2xl font-black tracking-[.25em]">
+        鳴潮
+      </div>
+
+      <div class="text-[9px] tracking-[.38em] text-sky-200 mt-1">
+        WUTHERING WAVES
+      </div>
+    </div>
+
+    <span class="text-xs tracking-widest text-sky-100/90">
+      EVENT ARCHIVE
+    </span>
+  </header>
+
+  <div class="max-w-xl mx-auto px-5 text-center pt-64 sm:pt-72">
+
+    <p class="text-xs tracking-[.3em] text-sky-100 mb-4">
+      ROVER · LIMITED EVENT
+    </p>
+
+    <h1 class="text-4xl md:text-5xl font-black tracking-widest glow">
+      漂泊者專區
+    </h1>
+
+    <p class="mt-4 text-sm leading-7 text-slate-100">
+      穿越寂靜之境，探索全新旅程<br>
+      查看活動資訊與相關內容
+    </p>
+
+  </div>
+</section>
+
+<main class="relative max-w-xl mx-auto px-5 pb-10">
+
+  <div class="panel rounded-2xl p-5 sm:p-6 mt-1">
+
+    <div class="flex items-center gap-4">
+
+      <div class="w-16 h-16 shrink-0 rounded-xl
+                  border border-sky-200/30
+                  bg-sky-300/10
+                  flex items-center justify-center
+                  text-4xl feature-icon">
+        ✦
+      </div>
+
+      <div>
+        <p class="text-xs tracking-widest text-sky-200">
+          EVENT INFORMATION
+        </p>
+
+        <h2 class="text-xl font-bold mt-1">
+          活動資訊專區
+        </h2>
+
+        <p class="text-sm text-slate-300 mt-1 leading-6">
+          查看活動說明、最新消息與參與方式
+        </p>
+      </div>
+
+    </div>
+
+    <div class="h-px bg-sky-100/15 my-5"></div>
+
+    <div class="flex justify-between items-center text-sm gap-3">
+      <span class="text-slate-300">
+        活動狀態
+      </span>
+
+      <span class="text-sky-200">
+        請以官方公告為準
+      </span>
+    </div>
+
+  </div>
+
+  <a
+    href="https://lin.ee/sIULNWm"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="cta mt-6 w-full rounded-full py-4 px-6
+           font-black tracking-widest inline-flex
+           items-center justify-center gap-3">
+
+    前往 LINE 活動專區
+    <span class="text-xl">↗</span>
+
+  </a>
+
+  <p class="mt-4 text-center text-xs leading-6 text-slate-400">
+    點擊按鈕將開啟外部 LINE 頁面<br>
+    請確認外部頁面的來源與內容
+  </p>
+
+  <div class="grid grid-cols-3 gap-3 mt-8">
+
+    <div class="panel rounded-xl p-4 text-center">
+      <div class="text-2xl feature-icon">✧</div>
+      <p class="text-xs mt-2">探索旅程</p>
+    </div>
+
+    <div class="panel rounded-xl p-4 text-center">
+      <div class="text-2xl feature-icon">◇</div>
+      <p class="text-xs mt-2">活動資訊</p>
+    </div>
+
+    <div class="panel rounded-xl p-4 text-center">
+      <div class="text-2xl feature-icon">⌁</div>
+      <p class="text-xs mt-2">漂泊者專區</p>
+    </div>
+
+  </div>
+
+  <footer class="text-center px-5 pb-5 pt-10">
+
+    <div class="text-lg font-bold tracking-[.35em]">
+      鳴潮
+    </div>
+
+    <p class="text-[9px] tracking-[.35em] text-slate-400 mt-2">
+      WUTHERING WAVES
+    </p>
+
+    <p class="text-[10px] text-slate-500 mt-5 leading-5">
+      本頁為非官方粉絲設計示範頁面，<br>
+      與遊戲官方及其營運商無隸屬關係。
+    </p>
+
+  </footer>
+
+</main>
+
+</body>
+</html>
